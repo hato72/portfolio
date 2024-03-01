@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>制作物詳細</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="制作物詳細">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- <header>
+
+<div id="logo">
+<h1><a href="index.html"><img src="images/logo.png" alt="SAMPLE "></a></h1>
+</div>
+
+</header> -->
+
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="material-icons led-color-of-icon">服部's ポートフォリオ</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="../index.html" class="scroll-to-top-li">トップ</a>
+                    </li>
+					<li><a href="../service.html" class="ws">制作物一覧</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--開閉ブロック-->
+<!-- <div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社概要</a></li>
+<li><a href="">サービス紹介</a>
+	<ul>
+	<li><a href="service.html">メニュー</a></li>
+	<li><a href="service.html">メニュー</a></li>
+	<li><a href="service.html">メニュー</a></li>
+	</ul>
+</li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</nav> -->
+
+<!-- <div class="sh">
+<p>※800px以下のメニュー開閉時にのみ表示させたい情報があればここ（shボックスの中）に入れて下さい。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。</p>
+</div>
+
+</div> -->
+<!--/#menubar-->
+
+<main>
+
+<article>
+
+<h2>2次元タイルベースゲーム</h2>
+
+<p><img src="../images/javagame.png" alt=""></p>
+
+<table class="ta1">
+<tr>
+<th>使用言語など</th>
+<td>
+    Java
+</td>
+</tr>
+<tr>
+<th>作成経緯</th>
+<td>
+    大学の自由課題において作成した。 元々は任天堂の「スーパーマリオブラザーズ」のように、障害物を避けて目的地を目指す横スクロールアクションゲームの作成を予定していた。 しかし、開発期間や持ちうる技術との兼ね合いから横スクロールは諦めることとした。 その際に、織姫と彦星にも天の川という障害があったことから、二人の関係をゲームで再現したいと感じ織姫と彦星を題材としたゲームを作成した。
+</td>
+</tr>
+<tr>
+<th>内容</th>
+<td>
+    プレイアブルキャラクターである彦星をキー操作し、障害物である2体の偽織姫や当該のマスに移動すると落下する偽タイルを避けて本物の織姫がいるゴールを目指す二次元タイルベースゲームである。 
+    偽織姫は画面上から画面下へ等速直線運動しており、彦星が偽織姫にぶつかる、もしくは偽タイルのマスに進むとゲームオーバーとなる仕様になっている。<br>
+    偽織姫と彦星の移動の管理方法がそれぞれピクセル単位とタイル単位であったため、移動管理は変えずに彦星の座標の管理方法をピクセル単位に変換し、当たり判定が正しく発生するように工夫した。
+    この時、イラスト同士はぶつかっているように見えなくても当たり判定は作動していることがあったため、当たり判定の範囲を調節し、イラストの大きさに合わせた当たり判定が発生するように設定した。
+    また、偽タイルのマスに進むとタイルが消え、彦星が中心に向かって小さくなるアニメーションを加えることで落下しているように見せることを工夫している。
+</td>
+</tr>
+
+<tr>
+    <th>プログラムファイル</th>
+    <td>
+        <a href="https://drive.google.com/drive/folders/1_qdLclsf-ZNh-1uBOIawkmQ6uFoPYIU8?usp=drive_link" target="_blank">Driveリンク</a>
+       
+    </td>
+</tr>
+
+<tr>
+    <th>実行結果</th>
+    <td>
+        <a href="https://drive.google.com/file/d/1wjMYWfZUTCqbHwFhcltI8PsbC8LUtzqY/view?usp=drive_link" target="_blank">実行結果リンク</a>
+    </td>
+</tr>
+
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<div class="copy">
+<small>Copyright&copy; <a href="../index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="../js/main.js"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</body>
+</html>

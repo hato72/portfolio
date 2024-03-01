@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>制作物詳細</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="制作物詳細">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- <header>
+
+<div id="logo">
+<h1><a href="index.html"><img src="images/logo.png" alt="SAMPLE "></a></h1>
+</div>
+
+</header> -->
+
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="material-icons led-color-of-icon">服部's ポートフォリオ</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="../index.html" class="scroll-to-top-li">トップ</a>
+                    </li>
+					<li><a href="../service.html" class="ws">制作物一覧</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--開閉ブロック-->
+<!-- <div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社概要</a></li>
+<li><a href="">サービス紹介</a>
+	<ul>
+	<li><a href="service.html">メニュー</a></li>
+	<li><a href="service.html">メニュー</a></li>
+	<li><a href="service.html">メニュー</a></li>
+	</ul>
+</li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</nav> -->
+
+<!-- <div class="sh">
+<p>※800px以下のメニュー開閉時にのみ表示させたい情報があればここ（shボックスの中）に入れて下さい。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。</p>
+</div>
+
+</div> -->
+<!--/#menubar-->
+
+<main>
+
+<article>
+
+<h2>歩行判定プログラム</h2>
+
+<p><img src="../images/mediapipe.png" alt=""></p>
+
+<table class="ta1">
+<tr>
+<th>使用言語など</th>
+<td>
+    Python
+</td>
+</tr>
+<tr>
+<th>作成経緯</th>
+<td>
+    今後の研究で姿勢推定技術を用いて陸上選手の走行中の姿勢を推定し、課題点を可視化する開発を行うことを予定している。
+    また、将来的に姿勢推定技術を新しいゲームの開発やスポーツ選手の姿勢改善などに応用したいと考えているため、姿勢推定技術について学んでおきたいと考えた。
+    そこで、初歩の目標として、カメラから歩行を検出する本プログラムの開発に取り組んだ。
+</td>
+</tr>
+<tr>
+<th>内容</th>
+<td>
+    mediapipeライブラリを用いてカメラからリアルタイムで骨格情報を読み取る。
+    そして、足から膝までの高さの8分の1を閾値に設定し、この閾値よりも足の位置が上に上がっていたら「足が上がった」と判定する。 
+    そして、上がった足の位置が閾値よりも下となったら「足を下ろした」と判定しこれを一歩とする。
+    このアルゴリズムを用いて歩行判定を行った。<br>
+    しかし、足踏みをしても正しく歩行判定されないという困難があった。
+    これは、推定を1フレームごとに繰り返し行うため、閾値や足の状態がリセットされることが原因であった。
+    そこで、閾値の問題については条件分岐を用いて初回に算出した閾値をグローバル変数に格納するように工夫したことで解消した。
+    しかし足の状態は正しく判定できなかった。そこで、私は同様の研究を行っていた先輩に協力を依頼し、デバッグを繰り返したことでこの問題も解消させることができた。
+</td>
+</tr>
+
+<tr>
+    <th>プログラムファイル</th>
+    <td>
+        <a href="https://drive.google.com/drive/folders/1aYfHxJDvld64FB80lQEsDpnZ7Qnc_rg3?usp=drive_link" target="_blank">Driveリンク</a>
+        
+    </td>
+</tr>
+
+<tr>
+    <th>実行結果</th>
+    <td>
+        <a href="https://drive.google.com/file/d/1v8bIrPetpdQz5Qy7pTu9VzusCiccDQvv/view?usp=drive_link" target="_blank">実行結果リンク</a>
+    </td>
+</tr>
+
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<div class="copy">
+<small>Copyright&copy; <a href="../index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="../js/main.js"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</body>
+</html>

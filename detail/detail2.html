@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>制作物詳細</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="制作物詳細">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- <header>
+
+<div id="logo">
+<h1><a href="index.html"><img src="images/logo.png" alt="SAMPLE "></a></h1>
+</div>
+
+</header> -->
+
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="material-icons led-color-of-icon">服部's ポートフォリオ</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="../index.html" class="scroll-to-top-li">トップ</a>
+                    </li>
+					<li><a href="../service.html" class="ws">制作物一覧</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--開閉ブロック-->
+<!-- <div id="menubar">
+
+<nav>
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社概要</a></li>
+<li><a href="">サービス紹介</a>
+	<ul>
+	<li><a href="service.html">メニュー</a></li>
+	<li><a href="service.html">メニュー</a></li>
+	<li><a href="service.html">メニュー</a></li>
+	</ul>
+</li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</nav> -->
+
+<!-- <div class="sh">
+<p>※800px以下のメニュー開閉時にのみ表示させたい情報があればここ（shボックスの中）に入れて下さい。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。<br>
+サンプルテキスト。サンプルテキスト。</p>
+</div>
+
+</div> -->
+<!--/#menubar-->
+
+<main>
+
+<article>
+
+<h2>常磐線の電車案内システム</h2>
+
+<p><img src="../images/norikae.png" alt=""></p>
+
+<table class="ta1">
+<tr>
+<th>使用言語など</th>
+<td>
+    Python,Flask,Flutter,Firebase
+</td>
+</tr>
+<tr>
+<th>作成経緯</th>
+<td>
+    大学のチーム開発プロジェクトにおいて作成した。<br>
+            このテーマを選択した理由は、最短経路検索、最短時間検索、時刻表データなど、個々が独立していて作業の分担がしやすいと考えたからだ。<br>
+            また、必要な技術レベル自体はそこまで高くないため実現可能性が高く、完成できたかが重視されるこのプロジェクトにおいては適していると考えた。<br>
+            当初はPythonで行っていたが、オブジェクト指向のメリットを活かすことができ、なおかつ全員が慣れている言語であるJavaで開発を行った。
+</td>
+</tr>
+<tr>
+<th>内容</th>
+<td>
+    このシステムでは出発時間を指定した検索と到着時間を指定した検索を行う機能を実装した。探索アルゴリズムにはAスターアルゴリズムを用いている。<br>
+        チームは8人で、私は最短時間検索の中の到着時間から経路を求めるプログラムを担当した。<br>
+        到着時間検索では、引数に渡した時間以降に出発する最短の経路を返す関数を用いている。<br>
+        具体的には、この関数で返された経路の到着駅に到着する時間と初めの引数の時間との差を求める。
+        そして初めの引数の時間からこの差の値を引いた時間を再度引数として関数に渡し、経路を検索する。
+        これによって得た経路の到着駅に到着する時間を求めて当初の引数の時間より前に到着するまで1分ずつ引いて経路検索を繰り返す。<br>
+        つまり、A駅を出発し、B駅に18：30分に到着したい場合、18：30分を表す6桁の整数183000を先ほどの関数の引数に渡す。
+        そうするとこの関数からは18：30以降にA駅を出発してB駅に着くまでの最短経路が返される。
+        これをB駅に19時に着く経路だとすると、A駅間とB駅間の乗車時間は30分だとわかるため、初めに設定していた18：30分より30分前の18時(180000)を関数の引数として再度検索を行う。
+        この操作後に18：30分より前に到着する経路が見つかった場合は操作を終了し、見つからない場合は18時から1分ずつ引いて18：30分より前に到着する経路が見つかるまで検索を繰り返す。
+
+
+
+</td>
+</tr>
+
+<tr>
+    <th>プログラムファイル</th>
+    <td>
+        <a href="https://drive.google.com/drive/folders/1iCV-ju9361Gblfn-FDk_DXKdEGlPdhW9?usp=drive_link" target="_blank">Driveリンク</a>
+        
+    </td>
+</tr>
+
+<tr>
+    <th>実行結果</th>
+    <td>
+        <a href="https://drive.google.com/drive/folders/1YeVvB-6sDhFREbYYxg-0CYhF_Gt_E0zL?usp=drive_link" target="_blank">実行結果リンク</a>
+    </td>
+</tr>
+
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<div class="copy">
+<small>Copyright&copy; <a href="../index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="../js/main.js"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</body>
+</html>
