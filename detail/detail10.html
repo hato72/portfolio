@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>制作物詳細</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="制作物詳細">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- <header>
+
+<div id="logo">
+<h1><a href="index.html"><img src="images/logo.png" alt="SAMPLE "></a></h1>
+</div>
+
+</header> -->
+
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#" data-activates="nav-mobile" class="button-collapse">
+                    <i class="material-icons led-color-of-icon">服部's ポートフォリオ</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="../index.html" class="scroll-to-top-li">トップ</a>
+                    </li>
+					<li><a href="../service.html" class="ws">制作物一覧</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<main>
+
+<article>
+
+<h2>Vtuber配信スケジュール確認サイト</h2>
+
+<p><img src="../images/memo.png" alt=""></p>
+
+<table class="ta1">
+<tr>
+<th>使用言語など</th>
+<td>
+    Next.js,TypeScript,Vercel,tailwindCSS等
+</td>
+</tr>
+<tr>
+<th>作成経緯</th>
+<td>
+    私はバーチャルYouTuber(以下「Vtuber」と呼ぶ。)の配信を見ることにハマっており、Vtuberの配信スケジュールを一目で確認できるサイトの作成に挑戦したいと考えた。<br>
+    そこで、以下の記事(https://zenn.dev/eternaleight/books/fedd5f1ce2f9fc)を見つけた。
+    こちらの記事では、Hololiveに所属するVtuberのみの配信状況について表示するサイトとなっている。<br>
+    しかし、私は特に4大事務所と呼ばれる「Hololive」や「にじさんじ」、「あおぎり高校」、「ぶいすぽっ！」に所属するVtuberを見ることが好きであったため、4大事務所に所属するVtuberの配信スケジュールを表示したいと考え、本プログラムを作成した。<br>
+
+</td>
+</tr>
+<tr>
+<th>内容</th>
+<td>
+    Next.jsとTypeScriptを使用して開発を行った。<br>
+    ヘッダー部分には現在配信している、または今後配信予定であるVtuberのアイコンが表示される。
+    そして、ヘッダー以下には配信中のVtuberの配信サムネイルと配信予定のVtuberの配信サムネイルが表示される。
+    これらの情報はholodexというサイトのAPIを使用して取得している。<br>
+    ヘッダーのDrawerボタンをクリックすると画面左側でサイドバーが開く。<br>
+    サイドバーにはAll GroupボタンやHololiveボタン、Nijisanjiボタンなどがある。<br>
+    サイドバーのAll Groupボタンを押すと4大事務所のどちらかに所属する全Vtuberのアイコンと配信状況が表示され、Hololiveなどの各事務所名に対応する名前のボタンを押すことで各事務所に所属するVtuberのアイコンと配信状況を表示することができる。<br>
+
+</td>
+</tr>
+
+<tr>
+    <th>プログラムファイル</th>
+    <td>
+        <!-- <a href="" target="_blank">Driveリンク</a> -->
+        <a href="https://github.com/hato72/vtuberdule" target="_blank">GitHub</a>
+    </td>
+</tr>
+
+<tr>
+    <th>実行結果</th>
+    <td>
+        <a href="https://vtuberdule-pink.vercel.app" target="_blank">本プログラムで作成したサイト</a>
+    </td>
+</tr>
+
+</table>
+
+<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
+
+</article>
+
+</main>
+
+<footer>
+
+<div class="copy">
+<small>Copyright&copy; <a href="../index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</div>
+
+</footer>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+</div>
+<!--/#container-->
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="../js/main.js"></script>
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+</body>
+</html>
