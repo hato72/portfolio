@@ -94,12 +94,8 @@
 <dl id="new">
 <dt>2018/4<span>高等学校</span></dt>
 <dd>私立流通経済大学付属柏高等学校　入学</dd>
-<dt>2021/3<span>高等学校</span></dt>
-<dd>私立流通経済大学付属柏高等学校　卒業</dd>
 <dt>2021/4<span class="icon-bg1">大学</span></dt>
-<dd>東京理科大学　理工学部情報科学科　入学</dd>
-<dt>2025/3<span class="icon-bg1">大学</span></dt>
-<dd>東京理科大学　創域理工学部情報計算科学科　卒業見込み</dd>
+<dd>東京理科大学　理工学部情報科学科(創域理工学部情報計算科学科)　入学</dd>
 </dl>
 </section>
 
@@ -207,11 +203,11 @@
 	また、<b>好奇心旺盛な性格</b>で、3DCGソフトのBlenderやIT資格、ネットワークやデータサイエンスなどたくさんの勉強に興味を持って自主的に学習を行っている。<br>
 	プログラミングも3年間毎日欠かさず行っており、現在は10言語ほどに加えて、複数の技術の基礎知識を有するまでに成長することができた。<br>
 
-	<br>
+	<!-- <br>
 	以下はある企業のインターンシップの最終日にチームメンバーと撮影した写真である。<br>
 	<br>
 	<figure><img src="photo/intern.jpg" alt="" width="420" height="560"></figure>
-	<br>
+	<br> -->
 
 	<h4>将来のエンジニア像</h4>
 	事業領域、役割、技術という3軸を持ってエンジニアとして難しい課題に挑戦し続けていきたい。
@@ -251,7 +247,7 @@
 					labels: ["Python", "Java", "Go", "C言語", "C++","C#","TypeScript", "Flutter", "SQL", "Vue",],
 					datasets: [{
 						label: '',
-						data: [2, 1, 0.6, 1, 0.3,0.2,0.3,0.2,0.3,0.1],
+						data: [2.5, 1, 0.8, 1, 0.3,0.2,0.4,0.4,0.4,0.1],
 						backgroundColor: 'RGBA(225,95,150, 0.5)',
 						borderColor: 'RGBA(225,95,150, 1)',
 						borderWidth: 1,
@@ -294,7 +290,7 @@
 					labels: ["Python", "Java", "Go", "C言語", "C++","C#","TypeScript", "Flutter", "SQL", "Vue"],
 					datasets: [{
 						label: "",
-						data: [3, 3, 2, 2, 1,1,1,1,2,1,1],
+						data: [3, 3, 2, 2,1,1,3,3,3,3,1],
 
 						backgroundColor: 'RGBA(225,95,150, 0.5)',
 						borderColor: 'RGBA(225,95,150, 1)',
@@ -342,10 +338,12 @@
 			var myRadarChart = new Chart(ctx, {
 				type: 'radar', 
 				data: { 
-					labels: ["Flask", "Django","AIライブラリ(Pytorch等)","OpenCV","echo","MATLAB","Unity","AWS","MySQL","SQLite","PostgreSQL","AuroraSQL","Linux","Firebase","Docker","GitLab"],
+					labels: ["Flask", "Django","AIライブラリ(Pytorch等)","OpenCV","echo",
+							"MATLAB","Unity","AWS","MySQL","SQLite","PostgreSQL","AuroraSQL",
+							"Linux","Firebase","Docker"],
 					datasets: [{
 						label: '',
-						data: [3,2,2,2,1,1,1,1,2,2,1,1,1,1,1,1],
+						data: [3,2,2,2,2,1,1,1,2,2,2,1,1,1,2],
 						backgroundColor: 'RGBA(225,95,150, 0.5)',
 						borderColor: 'RGBA(225,95,150, 1)',
 						borderWidth: 1,
@@ -433,11 +431,12 @@
 	<div class="list-container">
 
 	<div class="list blur">
-	<figure><img src="images/ocr.png" alt=""></figure>
-	<div class="text">
-	<h4>文字認識アプリ</h4>
-	<p>写真から文字認識を行うwebアプリ</p>
-	</div>
+		<figure><img src="images/CookMeet.png" alt=""></figure>
+		<div class="text">
+		<h4>CookMeet</h4>
+		<p>質問に答えることでAIによってレシピがレコメンドされるアプリ</p>
+		</div>
+		<p class="btn"><a href="detail/detail11.html">詳しくみる</a></p>
 	</div>
 
 	<div class="list blur">
